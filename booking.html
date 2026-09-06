@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking - Hotel FOF</title>
+    <link rel="icon" type="png" href="FOF.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="formstyle.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar-brand img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            color: white !important;
+            transition: 0.3s;
+        }
+
+        .nav-link.active
+        {
+            color:gold !important;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: gold !important;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: 600;
+        }
+
+        .hero-section{
+        background: url('b1.jpg');
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        }
+
+.overlay{
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.overlay p{
+    font-size: 1.5rem;
+}
+
+.card{
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover
+{
+    transform:scale(1.03);
+    transition: 0.3s;
+}
+
+.facility{
+    background-color: #212529;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.facility p{
+    font-size: 1.2rem;
+}
+
+.offer
+{
+    background-color: black;
+    color: white;
+}
+
+.offer p{
+    font-size: 1.2rem;
+}
+
+
+
+.btn:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+@media(max-width:768px){
+
+    .overlay h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .overlay p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="FOF.html">
+                <img src="FOF.png" alt="logo">
+                FLAVOURS OF FUSION
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="FOF.html">HOME</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="dining.html">DINING</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="package.html">PACKAGES</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                    <a class="nav-link active" href="booking.html">BOOKINGS</a>
+                    </li>
+
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <header class="hero-section">
+
+    <div class="overlay">
+
+        <h1>
+            Book Your Luxury Stay
+        </h1>
+
+        <p>
+            Experience Comfort & Elegance
+        </p>
+
+    <button class="btn btn-warning btn-sm mt-3">
+    Reserve Now
+    </button>
+    </div>
+
+    </header>
+
+    <section id="booking" class="container my-5">
+        <h3 class="text-center mb-5">AVAILABLE ROOMS</h3>
+    <div class="row g-4">
+
+        <!-- Deluxe Room -->
+        <div class="col-md-4">
+
+            <div class="card text-center h-100">
+
+                <img src="Deluxeroom.png" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4 class="card-title">Deluxe Room</h4>
+
+                    <p class="card-text">
+                        Rs.5000/Night <br>
+                        AC | WiFi
+                    </p>
+
+                    <ul class="list-unstyled">
+                        <li>✓ Free WiFi</li>
+                        <li>✓ Smart TV</li>
+                        <li>✓ Breakfast Included</li>
+                        <li>✓ Swimming Pool</li>
+                    </ul>
+
+                    <a href="FOF.html?room=Deluxe" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Suite Room -->
+        <div class="col-md-4">
+
+            <div class="card text-center h-100">
+
+                <img src="suite.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4 class="card-title">Suite Room</h4>
+
+                    <p class="card-text">
+                        Rs.9000/Night
+                    </p>
+                    <p>Pool|Tv</p>
+
+                    <p>
+                        Luxurious suite with elegant interiors,
+                        king-size bed, modern amenities,
+                        and premium comfort.
+                    </p>
+
+                    <ul class="list-unstyled">
+                        <li>✓ King Size Bed</li>
+                        <li>✓ Free WiFi</li>
+                        <li>✓ Smart TV</li>
+                        <li>✓ Breakfast Included</li>
+                    </ul>
+                    
+                    <a href="FOF.html?room=Suite" class="btn btn-primary">Book Now</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Family Room -->
+        <div class="col-md-4">
+
+            <div class="card text-center h-100">
+
+                <img src="FamilyRoom.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4 class="card-title">Family Room</h4>
+
+                    <p class="card-text">
+                        Rs.20000/Night
+                    </p>
+                    <p>Balcony|WiFi</p>
+
+                    <p>
+                        Spacious family room designed for comfort,
+                        convenience, and memorable stays with loved ones.
+                    </p>
+
+                    <ul class="list-unstyled">
+                        <li>✓ Free WiFi</li>
+                        <li>✓ Air Conditioning</li>
+                        <li>✓ Smart TV</li>
+                        <li>✓ Breakfast Included</li>
+                    </ul>
+                    <a href="FOF.html?room=Family"
+                    class="btn btn-primary">
+
+                    Book Now
+
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="Facilities" class="container my-5">
+
+    <div class="facility p-4 rounded">
+
+        <h3 class="mb-4">
+            HOTEL FACILITIES
+        </h3>
+
+        <p>
+            ✓ Free WiFi &nbsp;&nbsp;
+            ✓ Swimming Pool &nbsp;&nbsp;
+            ✓ Spa &nbsp;&nbsp;
+            ✓ Restaurant
+        </p>
+
+    </div>
+
+</section>
+
+<section id="offer" class="container my-5">
+    <div class="offer p-4 rounded">
+    <h3 class="mb-4">SPECIAL OFFER</h3>
+    
+    <p>20% OFF ON WEEKEND BOOKINGS</p>
+
+    <button class="btn btn-warning">Claim Offer</button>
+    </div>
+</section>
+
+<section id="review" class="container my-5">
+    <div class="customerreview p-4">
+        <h3 class="mb-4">CUSTOMER REVIEW</h3>
+        <div class="row g-4">
+            <div class="col md-6">
+                <div class="card text h-100">
+                <p>*****</p>
+                <p>Amazing Experience</p>
+                <p>- Rahul Sharma</p>
+                </div>
+            </div>
+
+            <div class="col md-6">
+                <div class="card text h-100">
+                <p>****</p>
+                <p>Luxury Stay</p>
+                <p>- Priya Patel</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+    <footer>
+
+        <p>
+            © 2025 Hotel TGB. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
